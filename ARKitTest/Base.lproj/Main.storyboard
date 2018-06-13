@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,59 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARKitTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZ4-ha-BZp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byz-qr-qjR">
+                                <rect key="frame" x="0.0" y="629" width="91" height="38"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62352941179999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="1fj-le-QYQ"/>
+                                    <constraint firstAttribute="width" constant="91" id="Red-aM-2Dq"/>
+                                </constraints>
+                                <state key="normal" title="Add Cube"/>
+                                <connections>
+                                    <action selector="addCube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZc-5g-ZgW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXa-n3-MEg">
+                                <rect key="frame" x="284" y="629" width="91" height="38"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.62352941179999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="kXl-Qg-7Yd"/>
+                                    <constraint firstAttribute="height" constant="38" id="xyI-Px-Fy3"/>
+                                </constraints>
+                                <state key="normal" title="Add Cup"/>
+                                <connections>
+                                    <action selector="addCup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TnX-V3-vGP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Byz-qr-qjR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0VD-3J-lG9"/>
+                            <constraint firstItem="PXa-n3-MEg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7cg-Vz-31n"/>
+                            <constraint firstItem="PXa-n3-MEg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FH2-wa-Zop"/>
+                            <constraint firstItem="UZ4-ha-BZp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HPx-MG-c1K"/>
+                            <constraint firstItem="Byz-qr-qjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z5p-p1-n8k"/>
+                            <constraint firstItem="UZ4-ha-BZp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g4L-cG-phH"/>
+                            <constraint firstItem="UZ4-ha-BZp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q3R-RU-t5W"/>
+                            <constraint firstItem="UZ4-ha-BZp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qer-Z1-UNT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="UZ4-ha-BZp" id="M4l-2a-mGE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

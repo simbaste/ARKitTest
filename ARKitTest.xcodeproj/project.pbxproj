@@ -12,6 +12,7 @@
 		A3C27B0920D0035D007EBF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C27B0720D0035D007EBF84 /* Main.storyboard */; };
 		A3C27B0B20D0035E007EBF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C27B0A20D0035E007EBF84 /* Assets.xcassets */; };
 		A3C27B0E20D0035E007EBF84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C27B0C20D0035E007EBF84 /* LaunchScreen.storyboard */; };
+		A3C27B1620D01370007EBF84 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C27B1520D01370007EBF84 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A3C27B0A20D0035E007EBF84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3C27B0D20D0035E007EBF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3C27B0F20D0035E007EBF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3C27B1520D01370007EBF84 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				A3C27B0520D0035D007EBF84 /* ViewController.swift */,
 				A3C27B0720D0035D007EBF84 /* Main.storyboard */,
 				A3C27B0A20D0035E007EBF84 /* Assets.xcassets */,
+				A3C27B1520D01370007EBF84 /* Models.scnassets */,
 				A3C27B0C20D0035E007EBF84 /* LaunchScreen.storyboard */,
 				A3C27B0F20D0035E007EBF84 /* Info.plist */,
 			);
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3C27B0E20D0035E007EBF84 /* LaunchScreen.storyboard in Resources */,
+				A3C27B1620D01370007EBF84 /* Models.scnassets in Resources */,
 				A3C27B0B20D0035E007EBF84 /* Assets.xcassets in Resources */,
 				A3C27B0920D0035D007EBF84 /* Main.storyboard in Resources */,
 			);
